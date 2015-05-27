@@ -1477,7 +1477,7 @@ class ModConfigMixin(AuthenticatedReddit):
                      public_traffic=False, collapse_deleted_comments=False,
                      spam_comments='low', spam_links='high',
                      spam_selfposts='high', submit_text='',
-                     hide_ads=False, **kwargs):
+                     hide_ads=False, suggested_comment_sort='blank', **kwargs):
         """Set the settings for the given subreddit.
 
         :param subreddit: Must be a subreddit object.
@@ -1504,6 +1504,7 @@ class ModConfigMixin(AuthenticatedReddit):
                 'submit_link_label': submit_link_label or '',
                 'submit_text': submit_text,
                 'submit_text_label': submit_text_label or '',
+                'suggested_comment_sort': suggested_comment_sort,
                 'spam_comments': spam_comments,
                 'spam_links': spam_links,
                 'spam_selfposts': spam_selfposts,
